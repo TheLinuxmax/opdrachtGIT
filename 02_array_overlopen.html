@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Lennert Vanhoof">
+        <meta name="Keywords" content="html,css, javascript">
+        <meta name="description" content="beschrijving">
+        <title> </title>
+    </head>
+    <body>
+        <script type="text/javascript">
+        let automerk =[""];
+        let aantal = prompt("Hoeveel automerken wil je ingeven?","3");
+            for (let i = 1; i <=aantal; i++) {
+              automerk[i] = prompt(`Geef merk nr ${i} in.`,"Merk");
+            }
+
+            document.write(`${automerk[0]}`) ;
+            for (let i = 1; i <=aantal; i++) {
+                document.write(`<p> ${i}: ${automerk[i]} </p>`);
+            }
+        </script>
+    </body>   
+</html>
